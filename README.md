@@ -77,4 +77,9 @@ The [PRD Architect](https://chatgpt.com/g/g-693b8b92a6f88191bac257f00fb49d57-prd
 
 ## License
 
-The contents of this repo are released under the [MIT License](LICENSE). The license for course content may change in the future.
+- **Content** (lessons, prompts and markdown) is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). The full legal text is in [LICENSE](LICENSE).
+- **Code** (any code snippets) is licensed under the MIT License. See [LICENSE-CODE](LICENSE-CODE).
+- **Commercial use is allowed.** You can share and adapt this material for any purpose, including commercially, as long as you give credit.
+- **How to give credit:** use this attribution line, with a link to this repo:
+
+  > [Ray Villalobos, TECH 36 Vibe Coding](https://github.com/planetoftheweb/tech36-vibe-coding-resources)
