@@ -41,13 +41,11 @@ This week shows what building a real product looks like, using the story of an a
 | File | What it is |
 | --- | --- |
 | [prompts.md](prompts.md) | The polish prompt and the "what I did to finish it" outline prompt |
-| [ship-and-privacy-steps-DRAFT.md](ship-and-privacy-steps-DRAFT.md) | **DRAFT.** Proposed extra steps: ship pages and repo files, then a privacy check |
-| [ship-files-prompt-DRAFT.md](ship-files-prompt-DRAFT.md) | **DRAFT.** The proposed Ship Pages and Repo Files Prompt |
-| [privacy-test-prompt-DRAFT.md](privacy-test-prompt-DRAFT.md) | **DRAFT.** The proposed Privacy and Data Test Prompt |
+| [ship-and-privacy-steps.md](ship-and-privacy-steps.md) | Steps 5 and 6: ship pages and repo files, then a privacy check, plus what to submit |
+| [ship-files-prompt.md](ship-files-prompt.md) | The Ship Pages and Repo Files Prompt (harness version and short fallback) |
+| [privacy-test-prompt.md](privacy-test-prompt.md) | The Privacy and Data Test Prompt (harness version and short fallback) |
 | [privacy-check skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/privacy-check) | The same tool as an installable skill for Claude or ChatGPT |
 | [ship-files skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/ship-files) | The same tool as an installable skill for Claude or ChatGPT |
-
-> **Heads up:** the DRAFT files are proposals that are not yet part of the official assignment. Follow the assignment steps below unless your instructor says otherwise.
 
 ---
 
@@ -153,6 +151,6 @@ Make your VibeIt entry public and your finished project joins the class gallery,
 
 - Assignment 5 description from the course site (Canvas), converted to markdown.
 - Week overview and key ideas: rewritten for beginners from the class slides, Part 5: Professional Agentic Harness.
-- Draft ship files prompt, privacy test prompt and step text written for this course. **Not yet approved.** See the DRAFT files.
+- Ship files prompt, privacy test prompt and step text written for this course.
 
 [Back to the main index](../README.md)

@@ -1,0 +1,83 @@
+# TECH 36 Security Test Prompt
+
+> **Also available as a skill:** install the [security-check skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/security-check) in Claude Code or Claude.ai, or use it in a ChatGPT Project.
+
+**Main version: run it in a coding harness** (Claude Code, Cursor, or Codex) with your project open. It reads your code and rules itself, so it only asks a question or two. No harness yet? Use the **short fallback** at the bottom in any AI.
+
+**Open your project in a harness:** connect your project to GitHub (in Lovable, use the GitHub button; in AI Studio, save to GitHub or download the ZIP). Then in Cursor choose File > Open Folder (or Clone Repo), or in a terminal run `git clone` with your repo link, `cd` into the folder, and type `claude`.
+
+No login or database? Run it anyway. It still checks for exposed keys, HTTPS, and leftover debug info.
+
+## Main version (coding harness)
+
+```
+Run a beginner-friendly security check on this project. I'm a beginner, so use plain words and explain any tech term the first time you use it.
+
+Follow these safety rules the whole time:
+- Only check this project and its own live site. Never test, scan, or probe any other site, including the services it uses. Only look at the parts of those services that belong to this project.
+- Look, don't attack. No password guessing, no flooding the site with requests, no hacking tools, and nothing meant to crash or slow it down. Any visit to the live site must be read-only: open pages and read responses, don't submit, change, or delete anything.
+- Make no destructive changes. Don't edit, delete, or commit anything, run database changes, or rewrite git history until I pick what to fix.
+- If you find a secret key or password, show only the first 4 characters.
+- Never ask for my real password.
+
+Step 1. Read the repo yourself before asking me anything:
+- Planning files: PRD, agents.md, CLAUDE.md, and DESIGN.md, to learn what the app stores, who logs in, and what logged-in users can do.
+- The code, config, and package.json, to see which services and AI APIs it uses.
+- Database and storage rules: firebase.json, firestore.rules, storage.rules, Supabase migrations and policies, or whatever this project uses.
+- How keys are used: .env files, .env.example, and any key written straight into the code.
+- Git history: search past commits for keys, tokens, and .env files.
+- Deploy config (Vercel, Netlify, Firebase Hosting, Cloud Run, Lovable, or similar) and the live URL, from the README, config, or planning files.
+
+Step 2. Ask me only what you can't see, one question at a time, and wait for each answer. Aim for 0 to 3 questions. Tell me any guess in one sentence so I can confirm it. Good questions: "What's your live URL?" if you can't find it, and "Is the live site the same as this repo, or did you change things in your builder or service dashboards that aren't here?" If database rules aren't in the repo, ask me to paste them from the Firebase or Supabase dashboard.
+
+Step 3. Check these, and tell me which file or page you looked at for each one:
+- Exposed keys and secrets: secret keys, passwords, or tokens in the code, the files sent to the browser, committed .env files, or past commits. Some keys are meant to be public, like a Firebase web config or a Supabase anon (public) key. Those are only safe if the rules are locked down, so tell me which kind each key is. Secret keys, like a Supabase service role key, an OpenAI or Gemini API key, or a Stripe secret key, must never reach the browser or a public repo.
+- Database and storage rules: can someone who isn't logged in read, add, change, or delete data or files? Is Row Level Security turned on for every Supabase table? Flag any rule that lets anyone read or write everything.
+- One user seeing another user's data: do the rules and code check that the logged-in user owns the data before showing or changing it? Could someone change an ID in the web address or a request to reach another user's data?
+- Forms and input: does the server check what people type, not just the browser? Does the app show user text safely, or could it run code people type in (for example raw HTML)? Is there anything to stop bots from flooding a public form?
+- HTTPS: does the deploy config force https? Are any images or scripts loaded over plain http?
+- Leftover admin pages and debug info: admin or test pages anyone can open, error messages that show code or database details, and debug logging of private data.
+- Optional live check: if you can reach the live URL, confirm read-only what you found, like https, a key showing up in the page source, or an admin page that opens. Say which findings you confirmed live.
+
+Rate how serious each problem is:
+- High: a stranger could steal data, change other people's data, or run up charges on my accounts. Fix it before sharing the link.
+- Medium: a real risk, but harder to use or less harmful.
+- Low: good practice. Fix it when you can.
+
+Reply in this format:
+What works: 2 or 3 things you checked that are already safe, one sentence each.
+What to fix: up to 5 problems, numbered, worst first. For each one: a short title, the rating (High, Medium, or Low), the file it's in, what you found in one sentence, and what a stranger could do with it in one plain sentence.
+How to improve it: 3 suggestions, most important first. Each is one short sentence (under 20 words) that starts with an action word like Move, Lock, Turn on, Remove, Hide, or Check.
+Example: Lock firestore.rules so each user can only read and write their own entries.
+If a secret key was ever committed or public, tell me to make a new key in that service and delete the old one, because removing it from the code isn't enough.
+
+Then ask me which problems I want to fix (at least 2, or all of them) and wait. Before you start, warn me that fixing can use a lot of credits, so I can fix things myself instead. Fix only the problems I picked, change nothing else, add no new features, and don't redesign anything. Don't delete data, turn off login, or rewrite git history. Show me the diff and explain each change in one sentence before you commit, and wait for my OK. Then tell me how to check that the site still works for both a logged-in user and a visitor.
+```
+
+## Short fallback (any AI, no harness)
+
+```
+Run a beginner-friendly security check on my website. Use plain words. Only look at my site and the code I share. Look, don't attack: no password guessing, no flooding, no hacking tools, and don't change or delete anything. If you find a secret key, show only the first 4 characters. Never ask for my real password.
+
+I'm sharing: my live link, plus my code or GitHub repo if I have it (or screenshots and the page source if I don't). If I have them, I'm also sharing my PRD, agents.md, CLAUDE.md, or DESIGN.md.
+
+Read what I share first. Then ask me only what you still need, one question at a time, like which services I use or to paste my Firebase or Supabase rules.
+
+Check: exposed keys and secrets, database and storage rules open to anyone, one user seeing or changing another user's data, forms and input handling, HTTPS, and leftover admin pages or debug info. Rate each problem High, Medium, or Low.
+
+Reply with: What works (2 or 3 things), What to fix (up to 5, numbered, worst first, each with its rating and what a stranger could do), and How to improve it (3 short action sentences). If a key was exposed, tell me to make a new one and delete the old one.
+
+Then ask which problems I want to fix (at least 2, or all of them). Optional: write one prompt I can paste into Lovable or my coding AI that fixes only those problems. Start it with a warning that it can use a lot of credits.
+```
+
+## Retest
+
+After you make your fixes and publish again, send this in the same chat:
+
+```
+I made the fixes. Run the security check on my site again and tell me what got better and what still needs work.
+```
+
+---
+
+[Back to Week 4](README.md) · [Main index](../README.md)

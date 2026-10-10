@@ -42,19 +42,19 @@ Vibe coding means building software by describing what you want in plain languag
 ### Week 4: The AI Powered App
 - [Overview and Assignment 4 steps](week-04/README.md)
 - [Week 4 prompts](week-04/prompts.md)
-- [Security test step (DRAFT)](week-04/security-test-step-DRAFT.md)
-- [Security Test Prompt (DRAFT)](week-04/security-test-prompt-DRAFT.md)
+- [Security test step](week-04/security-test-step.md)
+- [Security Test Prompt](week-04/security-test-prompt.md)
 
 ### Week 5: Professional Agentic Harness
 - [Overview and Assignment 5 steps](week-05/README.md)
 - [Week 5 prompts](week-05/prompts.md)
-- [Ship pages and privacy check steps (DRAFT)](week-05/ship-and-privacy-steps-DRAFT.md)
-- [Ship Pages and Repo Files Prompt (DRAFT)](week-05/ship-files-prompt-DRAFT.md)
-- [Privacy and Data Test Prompt (DRAFT)](week-05/privacy-test-prompt-DRAFT.md)
+- [Ship pages and privacy check steps](week-05/ship-and-privacy-steps.md)
+- [Ship Pages and Repo Files Prompt](week-05/ship-files-prompt.md)
+- [Privacy and Data Test Prompt](week-05/privacy-test-prompt.md)
 
-## About the DRAFT files
+## Security, privacy and ship steps
 
-Files with **DRAFT** in the name are proposed additions to Assignments 4 and 5: a security test, a ship pages and repo files prompt, and a privacy and data check. **They are pending the instructor's approval and are not part of the official assignments yet.** They may change or be removed. Each one has a banner at the top that says so. Until they're approved, follow the assignment steps in each week's `README.md`.
+Weeks 4 and 5 add a security test, a ship pages and repo files step, and a privacy and data check. Each one has a main version for a coding harness (Claude Code, Cursor, or Codex) and a short fallback for any AI. They're also available as skills (see below).
 
 ## Skills
 
