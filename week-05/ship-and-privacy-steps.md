@@ -12,7 +12,7 @@ Real sites have the boring pages people look for before they trust you: a privac
 2. Answer its questions. It reads your code and planning files first, so it usually only asks about your public contact and license.
 3. Check its plan before it builds. Building everything can use a lot of credits, so skip the extras if you want.
 4. Review the changes before it commits, then fill in every [bracket] it lists for you.
-5. Publish again and click every footer link on your phone and your computer.
+5. Publish again and click every footer link on your phone and your computer. Save the links to your new pages (and your repo link) for your fixes answer.
 
 > **These are drafts, not legal advice.** The privacy policy and terms should describe only what your site really does. Never put a real key in .env.example or your README.
 
@@ -37,9 +37,8 @@ I made the fixes. Run the privacy check again and tell me what got better and wh
 1. Your VibeIt **app** link (publish your finished project to VibeIt, then submit that link)
 2. A short "what I did to finish it" outline
 3. Your reflection (about 500 characters)
-4. Your ship pages and repo files (links to your new pages, plus your repo link if you have one)
-5. Your privacy test results
-6. The 2 or more problems you fixed and what the retest showed
+4. Paste your privacy check results
+5. Your fixes, new page links, and retest (the 2 or more problems you fixed, links to your new pages plus your repo link if you have one, and what the retest showed)
 
 ## Checklist rows
 
@@ -48,7 +47,7 @@ I made the fixes. Run the privacy check again and tell me what got better and wh
 | ☐ | Ship your pages (privacy, terms, about, contact, 404, footer) and repo files (README, .gitignore, .env.example, LICENSE), and fill in every [bracket] |
 | ☐ | Run the privacy check in your harness and confirm your pages match your code |
 | ☐ | Fix at least 2 problems, publish again, and run the retest |
-| ☐ | **Submit:** your VibeIt app link, finish outline, reflection, ship pages and repo files, privacy test results, and your fixes plus retest |
+| ☐ | **Submit:** your VibeIt app link, finish outline, reflection, privacy check results, and your fixes, new page links, and retest |
 
 ---
 

@@ -56,6 +56,8 @@ This week is about the design and gamification principles from class: the first 
 > 1. Your VibeIt **app** link (publish your game or site to VibeIt, then submit that link, not a profile ID)
 > 2. Your build outline
 > 3. Your reflection (about 500 characters), naming which principles you applied
+> 4. Paste your security test results
+> 5. Your fixes and retest (the 2 or more problems you fixed and what the retest showed)
 
 > **Test your link before you submit.** Open your published VibeIt link in a private or incognito window. If it doesn’t load there, it won’t load for me. A broken link is the most common reason work doesn’t count.
 
@@ -169,7 +171,8 @@ Before you check the list below, confirm these three. This polish gate is part o
 | ☐ | Publish with a live URL, test it, and add it to VibeIt (public or private) |
 | ☐ | Generate your build outline |
 | ☐ | Write your reflection naming the principles you applied |
-| ☐ | **Submit:** your VibeIt app link, build outline, and reflection |
+| ☐ | Run the [security test](security-test-step.md), fix at least 2 problems, publish again, and run the retest |
+| ☐ | **Submit:** your VibeIt app link, build outline, reflection, security test results, and your fixes and retest |
 
 ---
 

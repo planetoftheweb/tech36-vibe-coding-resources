@@ -29,8 +29,8 @@ I made the fixes. Run the security check on my site again and tell me what got b
 1. Your VibeIt **app** link (publish your game or site to VibeIt, then submit that link, not a profile ID)
 2. Your build outline
 3. Your reflection (about 500 characters), naming which principles you applied
-4. Your security test results
-5. The 2 or more problems you fixed and what the retest showed
+4. Paste your security test results
+5. Your fixes and retest (the 2 or more problems you fixed and what the retest showed)
 
 ## Checklist rows
 
@@ -38,7 +38,7 @@ I made the fixes. Run the security check on my site again and tell me what got b
 | --- | --- |
 | ☐ | Run the security test in a coding harness (or the short fallback in any AI) |
 | ☐ | Fix at least 2 problems, publish again, and run the retest |
-| ☐ | **Submit:** your VibeIt app link, build outline, reflection, security test results, and your fixes plus retest |
+| ☐ | **Submit:** your VibeIt app link, build outline, reflection, security test results, and your fixes and retest |
 
 ---
 

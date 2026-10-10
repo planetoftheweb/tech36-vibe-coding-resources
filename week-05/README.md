@@ -66,6 +66,8 @@ If you do take it on: pick one thing you've built in this course and take it the
 > 1. Your VibeIt **app** link (publish your finished project to VibeIt, then submit that link)
 > 2. A short "what I did to finish it" outline
 > 3. Your reflection (about 500 characters)
+> 4. Paste your privacy check results
+> 5. Your fixes, new page links, and retest (the 2 or more problems you fixed, links to your new pages plus your repo link if you have one, and what the retest showed)
 
 > **Test your link before you submit.** Open your published VibeIt link in a private or incognito window. If it doesn’t load there, it won’t load for me. A broken link is the most common reason work doesn’t count.
 
@@ -137,7 +139,8 @@ Make your VibeIt entry public and your finished project joins the class gallery,
 | ☐ | Publish, test the live URL as a stranger would, and add it to VibeIt (public encouraged) |
 | ☐ | Write your "what I did to finish it" outline |
 | ☐ | Write your reflection |
-| ☐ | **Submit:** your VibeIt app link, finish outline, and reflection |
+| ☐ | [Ship your pages and repo files](ship-and-privacy-steps.md), run the privacy check, fix at least 2 problems, publish again, and run the retest |
+| ☐ | **Submit:** your VibeIt app link, finish outline, reflection, privacy check results, and your fixes, new page links, and retest |
 
 ---
 
