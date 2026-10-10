@@ -37,6 +37,7 @@ AI Studio lets you build apps that use Gemini features: text, vision, image gene
 | [prompts.md](prompts.md) | Planning and build prompts for Path A (game) and Path B (add principles) |
 | [security-test-step-DRAFT.md](security-test-step-DRAFT.md) | **DRAFT.** A proposed extra step: security test your live site |
 | [security-test-prompt-DRAFT.md](security-test-prompt-DRAFT.md) | **DRAFT.** The proposed Security Test Prompt for that step |
+| [security-check skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/security-check) **(Beta)** | The same tool as an installable skill for Claude or ChatGPT |
 
 > **Heads up:** the two DRAFT files are proposals that are not yet part of the official assignment. Follow the assignment steps below unless your instructor says otherwise.
 

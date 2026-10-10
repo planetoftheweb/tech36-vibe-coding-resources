@@ -26,6 +26,7 @@ Chatbots are great at single-page demos, but real apps need a server. A server r
 | [prompts.md](prompts.md) | Lovable build prompts, the retest prompt and the build outline prompt |
 | [user-test-prompt.md](user-test-prompt.md) | The TECH 36 User Test Prompt used in step 5 |
 | [user-test-prompt-original.md](user-test-prompt-original.md) | An earlier, more detailed user test prompt with a scorecard (optional extra) |
+| [user-test skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/user-test) | The same tool as an installable skill for Claude or ChatGPT |
 
 ---
 

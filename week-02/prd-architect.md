@@ -21,6 +21,8 @@ The PRD Architect is the default way to write that plan in Assignment 2.
 5. **Pair it with rules.** Use the [AGENTS.md build rules](agents-md-build-rules.md) so the AI builds the way you want.
 6. **Save it.** Share a link, put the plan in a GitHub Gist, or copy the text. You'll reuse it in Week 3 and later.
 
+Prefer Claude or a ChatGPT Project? The [prd-architect skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/prd-architect) gives you the same interview as an installable skill.
+
 ## Other ways to write your plan
 
 - **[MVPunk](https://mvpunk.com):** creates a five-file contract (plan, agent rules, design system, project guide and a START_HERE file). Works best with a coding tool like Claude Code.

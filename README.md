@@ -56,6 +56,10 @@ Vibe coding means building software by describing what you want in plain languag
 
 Files with **DRAFT** in the name are proposed additions to Assignments 4 and 5: a security test, a ship pages and repo files prompt, and a privacy and data check. **They are pending the instructor's approval and are not part of the official assignments yet.** They may change or be removed. Each one has a banner at the top that says so. Until they're approved, follow the assignment steps in each week's `README.md`.
 
+## Skills
+
+The [Vibe Coding Skills](https://github.com/planetoftheweb/vibe-coding-skills) repo packages the main prompts from this course as installable skills for Claude and ChatGPT, so you can reuse them without copying and pasting every time.
+
 ## Prompts published as gists
 
 Some prompts here also live as public gists. The gist is always the latest version.

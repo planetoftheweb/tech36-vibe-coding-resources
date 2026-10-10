@@ -29,6 +29,7 @@ Last week you built something for yourself. This week you build for someone else
 | [prompts.md](prompts.md) | Research, planning and build prompts for this week |
 | [prd-architect.md](prd-architect.md) | How to use the PRD Architect to write your plan |
 | [agents-md-build-rules.md](agents-md-build-rules.md) | An AGENTS.md rules file that keeps a chatbot on plan |
+| [prd-architect skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/prd-architect) | The same tool as an installable skill for Claude or ChatGPT |
 
 ---
 

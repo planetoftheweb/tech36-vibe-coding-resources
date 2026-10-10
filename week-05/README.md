@@ -44,6 +44,8 @@ This week shows what building a real product looks like, using the story of an a
 | [ship-and-privacy-steps-DRAFT.md](ship-and-privacy-steps-DRAFT.md) | **DRAFT.** Proposed extra steps: ship pages and repo files, then a privacy check |
 | [ship-files-prompt-DRAFT.md](ship-files-prompt-DRAFT.md) | **DRAFT.** The proposed Ship Pages and Repo Files Prompt |
 | [privacy-test-prompt-DRAFT.md](privacy-test-prompt-DRAFT.md) | **DRAFT.** The proposed Privacy and Data Test Prompt |
+| [privacy-check skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/privacy-check) **(Beta)** | The same tool as an installable skill for Claude or ChatGPT |
+| [ship-files skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/ship-files) **(Beta)** | The same tool as an installable skill for Claude or ChatGPT |
 
 > **Heads up:** the DRAFT files are proposals that are not yet part of the official assignment. Follow the assignment steps below unless your instructor says otherwise.
 
