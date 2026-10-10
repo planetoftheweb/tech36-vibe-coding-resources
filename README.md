@@ -70,7 +70,7 @@ Some prompts here also live as public gists. The gist is always the latest versi
 | User Test (original) | [93aaad59](https://gist.github.com/planetoftheweb/93aaad59ea1f6bb5510917e046ef7618) | Week 3 (optional) |
 | AGENTS.md for chatbots | [6d5d4dc2](https://gist.github.com/planetoftheweb/6d5d4dc280fb6c81dee22a12b7a9a9e0) | Weeks 1 and 2 |
 
-The [PRD Architect](https://chatgpt.com/g/g-693b8b92a6f88191bac257f00fb49d57-prd-architect) used in Week 2 is a custom GPT, not a gist.
+The PRD Architect used in Week 2 is available as the [prd-architect skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/prd-architect) for Claude or a ChatGPT Project.
 
 ## Helpful sites from the course
 

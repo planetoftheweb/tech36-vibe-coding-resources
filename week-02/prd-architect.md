@@ -1,6 +1,6 @@
 # Using the PRD Architect
 
-**Link:** [PRD Architect](https://chatgpt.com/g/g-693b8b92a6f88191bac257f00fb49d57-prd-architect) (a custom GPT in ChatGPT)
+**Get it:** the [prd-architect skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/prd-architect). Install it in Claude (Claude.ai or Claude Code), paste its ChatGPT instructions into a ChatGPT Project, or paste its plain prompt into any AI.
 
 A PRD (Product Requirements Document) is a short written plan for what you're building. It answers four questions: who it's for, what problem it solves, what it does, and how you'll know it works. In this class, your PRD is the contract you hand to your AI and the thing you point back to when the AI drifts.
 
@@ -21,14 +21,10 @@ The PRD Architect is the default way to write that plan in Assignment 2.
 5. **Pair it with rules.** Use the [AGENTS.md build rules](agents-md-build-rules.md) so the AI builds the way you want.
 6. **Save it.** Share a link, put the plan in a GitHub Gist, or copy the text. You'll reuse it in Week 3 and later.
 
-Prefer Claude or a ChatGPT Project? The [prd-architect skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/prd-architect) gives you the same interview as an installable skill.
-
 ## Other ways to write your plan
 
 - **[MVPunk](https://mvpunk.com):** creates a five-file contract (plan, agent rules, design system, project guide and a START_HERE file). Works best with a coding tool like Claude Code.
 - **[OpenSpec](https://openspec.dev):** an open-source, spec-driven framework for students comfortable in a code editor.
-
-> **Note:** the PRD Architect's own instructions are not published as a public gist, so this page links to the GPT instead of copying its prompt.
 
 ---
 

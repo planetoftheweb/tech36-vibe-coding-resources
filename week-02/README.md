@@ -35,7 +35,7 @@ Last week you built something for yourself. This week you build for someone else
 
 ## Assignment 2: From Dashboard to Product
 
-**Tools:** Any AI you like for research (Claude, ChatGPT, Gemini, [NotebookLM](https://notebooklm.google.com)) · [PRD Architect](https://chatgpt.com/g/g-693b8b92a6f88191bac257f00fb49d57-prd-architect), [MVPunk](https://mvpunk.com), or [OpenSpec](https://openspec.dev) for your plan · Your vibe coding tool of choice
+**Tools:** Any AI you like for research (Claude, ChatGPT, Gemini, [NotebookLM](https://notebooklm.google.com)) · [PRD Architect skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/prd-architect), [MVPunk](https://mvpunk.com), or [OpenSpec](https://openspec.dev) for your plan · Your vibe coding tool of choice
 
 Last week you built a dashboard for yourself. This week you're building something for someone else. Find data, research it, plan it, scope it to the essentials, and build it.
 
@@ -108,7 +108,7 @@ What's the simplest version of this idea that still proves it works?
 
 Turn your thinking into a written plan you hand to your AI as the starting context. The plan covers the same four things no matter which tool you use: who it's for, the problem, the features, and what "done" looks like. You'll reuse this plan in Week 3 and the capstone. Pick the option that matches your comfort level and your build tool.
 
-> **Default: PRD Architect + AGENTS.md.** Works in any chatbot, and the recommended path for most of you. The [PRD Architect](https://chatgpt.com/g/g-693b8b92a6f88191bac257f00fb49d57-prd-architect) GPT interviews you one question at a time and co-writes a PRD. Pair it with an [AGENTS.md](https://gist.github.com/planetoftheweb/6d5d4dc280fb6c81dee22a12b7a9a9e0) rules file so the AI builds the way you want and doesn't drift from your plan.
+> **Default: PRD Architect + AGENTS.md.** Works in any chatbot, and the recommended path for most of you. The [PRD Architect skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/prd-architect) interviews you one question at a time and co-writes a PRD. Install it in Claude, or paste it into a ChatGPT Project. Pair it with an [AGENTS.md](https://gist.github.com/planetoftheweb/6d5d4dc280fb6c81dee22a12b7a9a9e0) rules file so the AI builds the way you want and doesn't drift from your plan.
 
 > **Reach: MVPunk.** [MVPunk](https://mvpunk.com) outputs a five-file contract: your plan, agent rules, a design system, a project guide, and a START_HERE file. It's the most thorough option, but those five files are harder to feed into a plain chatbot, so it shines with Claude Code or a medium-level coding tool. Free to use. Enrolled students get a promo code in Canvas that unlocks the AI features for the term.
 
@@ -222,6 +222,6 @@ No grades. The certificate is based on attending the sessions; assignments shoul
 - Assignment 2 description from the course site (Canvas), converted to markdown.
 - Week overview and key ideas: rewritten for beginners from the class slides, Part 2: From Dashboard to Product.
 - Gist: [An AGENTS.md file for chatbots to use when building apps](https://gist.github.com/planetoftheweb/6d5d4dc280fb6c81dee22a12b7a9a9e0), copied into [agents-md-build-rules.md](agents-md-build-rules.md).
-- [PRD Architect](https://chatgpt.com/g/g-693b8b92a6f88191bac257f00fb49d57-prd-architect), a custom GPT linked from the assignment.
+- The [prd-architect skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/prd-architect), which replaces the PRD Architect tool linked from the assignment.
 
 [Back to the main index](../README.md)
