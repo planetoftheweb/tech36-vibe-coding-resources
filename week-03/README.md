@@ -40,11 +40,13 @@ Use a chatbot like Gemini or ChatGPT to plan your project first, then build it i
 
 > **How to submit:** Answer the questions below. There is a **separate box for each item**:
 >
-> 1. Your VibeIt link (publish your site to VibeIt, then submit that link)
+> 1. Your VibeIt link to your **final** site, after your user test fixes (publish again, then submit that link)
 > 2. Your build outline
 > 3. Your reflection (about 500 characters)
 > 4. Your user test results
 > 5. The 2 or more problems you fixed and what the retest showed
+
+> **Submit your final link last.** Do the user test and fixes first, publish again, then submit. The link you turn in should show the fixed version, not the first draft.
 
 > **Test your link before you submit.** Open your published VibeIt link in a private or incognito window. If it doesn’t load there, it won’t load for me. A broken link is the most common reason work doesn’t count.
 
@@ -92,9 +94,9 @@ Create a page that displays all form submissions from the database in a clean li
 
 ### 4. Publish It
 
-Click the **Share** or **Publish** button in Lovable. It will deploy your site and generate a public URL. **Test your live site** before submitting: try creating an account, logging in, submitting the form, and viewing the data. Then add the site to [VibeIt](https://vibeit.work) (public or private, your choice) and submit your VibeIt link.
+Click the **Share** or **Publish** button in Lovable. It will deploy your site and generate a public URL. **Test your live site:** try creating an account, logging in, submitting the form, and viewing the data. Then add the site to [VibeIt](https://vibeit.work) (public or private, your choice). Don't submit yet. Your user test and fixes come next, and you'll submit the final link at the end.
 
-> Test your published site before submitting. The Lovable preview and the deployed site can behave differently. Check the form, login flow, and any pages that pull data from the database.
+> Test your published site before the user test. The Lovable preview and the deployed site can behave differently. Check the form, login flow, and any pages that pull data from the database.
 
 ---
 
@@ -113,6 +115,8 @@ I made the changes. Test the site again and tell me what got better and what sti
 ```
 
 > **Test the live site.** Give it your published URL, not the Lovable preview. Never give the AI your real password.
+
+> **This published version is your final site.** After the retest, make sure your VibeIt entry points to it. That's the link you submit.
 
 ---
 
@@ -144,11 +148,12 @@ Copy the result and paste it into your Canvas submission.
 | ☐ | Connect a database and make the form save data |
 | ☐ | Add user registration and login |
 | ☐ | Publish your site, test the live URL, and add it to VibeIt (public or private) |
-| ☐ | Generate your build outline |
-| ☐ | Write your short reflection |
 | ☐ | Run the user test on your live site (phone and desktop) |
 | ☐ | Fix at least 2 problems, publish again, and run the retest |
-| ☐ | **Submit:** your VibeIt link, build outline, reflection, user test results, and your fixes plus retest |
+| ☐ | Confirm your VibeIt link opens the final, fixed site in a private window |
+| ☐ | Generate your build outline |
+| ☐ | Write your short reflection |
+| ☐ | **Submit:** your final VibeIt link (after fixes), build outline, reflection, user test results, and your fixes plus retest |
 
 ---
 
