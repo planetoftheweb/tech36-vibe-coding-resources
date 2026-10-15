@@ -36,10 +36,11 @@ I made the fixes. Run the privacy check again and tell me what got better and wh
 
 1. Your VibeIt **app** link (publish your finished project to VibeIt, then submit that link)
 2. A short "what I did to finish it" outline
-3. Your reflection (about 500 characters)
-4. Your ship pages and repo files (links to your new pages, plus your repo link if you have one)
-5. Your privacy test results
-6. The 2 or more problems you fixed and what the retest showed
+3. Your reflection (at least 500 characters)
+4. Your privacy check results
+5. Your fixes, new page links, and retest: the 2 or more problems you fixed, what the retest showed, plus links to your new pages and your repo if you have one
+
+Every answer needs to be at least 500 characters and actually respond to its question.
 
 ## Checklist rows
 
@@ -48,7 +49,7 @@ I made the fixes. Run the privacy check again and tell me what got better and wh
 | ☐ | Ship your pages (privacy, terms, about, contact, 404, footer) and repo files (README, .gitignore, .env.example, LICENSE), and fill in every [bracket] |
 | ☐ | Run the privacy check in your harness and confirm your pages match your code |
 | ☐ | Fix at least 2 problems, publish again, and run the retest |
-| ☐ | **Submit:** your VibeIt app link, finish outline, reflection, ship pages and repo files, privacy test results, and your fixes plus retest |
+| ☐ | **Submit:** your VibeIt app link, finish outline, reflection, privacy check results, and your fixes plus retest (with links to your new pages and repo) |
 
 ---
 

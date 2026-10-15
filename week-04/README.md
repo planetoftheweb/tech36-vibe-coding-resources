@@ -55,7 +55,11 @@ This week is about the design and gamification principles from class: the first 
 >
 > 1. Your VibeIt **app** link (publish your game or site to VibeIt, then submit that link, not a profile ID)
 > 2. Your build outline
-> 3. Your reflection (about 500 characters), naming which principles you applied
+> 3. Your reflection (at least 500 characters), naming which principles you applied
+> 4. Your security test results
+> 5. The 2 or more problems you fixed and what the retest showed
+>
+> **Every answer needs to be at least 500 characters and actually respond to its question.**
 
 > **Test your link before you submit.** Open your published VibeIt link in a private or incognito window. If it doesn’t load there, it won’t load for me. A broken link is the most common reason work doesn’t count.
 
@@ -131,7 +135,29 @@ Publish your game or site to a live URL and test it in a new browser. Play or cl
 
 ---
 
-### 6. Generate a Build Outline
+### 6. Security Test Your Live Site
+
+Your site works. Now make sure a stranger can't read data that isn't theirs, change it, or use your keys. An AI can check the common mistakes in a few minutes. The [Week 4 resources](#files-in-this-folder) have more help.
+
+> **New to harnesses?** We cover them in Week 5. For now: connect your project to GitHub from your builder's settings, then open it in Cursor with File > Open Folder, or clone it in a terminal and type `claude`. If that's too much this week, paste the short fallback at the bottom of the prompt into any AI with your live link and your code or screenshots.
+
+1. Open your project in a coding harness (Claude Code, Cursor, or Codex) and paste the main version of the [Security Test Prompt](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/security-check). It reads your code and database rules itself.
+2. Answer its questions. Because it reads your code first, there should only be a few.
+3. Review what it found and copy the full results. You'll paste them into your submission.
+4. Pick at least 2 problems to fix, or fix them all. Fix them however you like. The prompt can also write an optional fix prompt for your AI agent, but that can use a lot of credits.
+5. Publish again, then send this in the same chat and copy what it says:
+
+```text
+I made the fixes. Run the security check on my site again and tell me what got better and what still needs work.
+```
+
+> **Test only your own site.** Give it your published URL. Use made-up test accounts, never your real password, and never paste a secret key into the chat. If the test finds an exposed key, make a new key in that service and delete the old one.
+
+> **Built a game with no login or database?** Run the test anyway. It still checks for exposed API keys, HTTPS, and leftover debug info. If it only finds 1 problem, fix that one and say so in your submission.
+
+---
+
+### 7. Generate a Build Outline
 
 Paste this into the same conversation where you built:
 
@@ -141,9 +167,9 @@ Review our conversation and create a short outline of what we built together. No
 
 ---
 
-### 7. Reflect
+### 8. Reflect
 
-500 characters or less. Name the two principles you applied and point to exactly where in your project each one shows up. What changed about how it feels? Keep it casual.
+At least 500 characters. Name the two principles you applied and point to exactly where in your project each one shows up. What changed about how it feels? Keep it casual.
 
 ---
 
@@ -169,7 +195,15 @@ Before you check the list below, confirm these three. This polish gate is part o
 | ☐ | Publish with a live URL, test it, and add it to VibeIt (public or private) |
 | ☐ | Generate your build outline |
 | ☐ | Write your reflection naming the principles you applied |
-| ☐ | **Submit:** your VibeIt app link, build outline, and reflection |
+| ☐ | Run the security test in a coding harness (or the short fallback in any AI) |
+| ☐ | Fix at least 2 problems, publish again, and run the retest |
+| ☐ | **Submit:** your VibeIt app link, build outline, reflection, security test results, and your fixes plus retest |
+
+---
+
+### Tips
+
+* **Questions?** Send me a message in Canvas Inbox. Submit your work through this assignment, not by email, so it's recorded with your submission.
 
 ---
 
