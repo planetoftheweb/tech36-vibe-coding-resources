@@ -28,9 +28,11 @@ I made the fixes. Run the security check on my site again and tell me what got b
 
 1. Your VibeIt **app** link (publish your game or site to VibeIt, then submit that link, not a profile ID)
 2. Your build outline
-3. Your reflection (about 500 characters), naming which principles you applied
+3. Your reflection (at least 500 characters), naming which principles you applied
 4. Your security test results
 5. The 2 or more problems you fixed and what the retest showed
+
+Every answer needs to be at least 500 characters and actually respond to its question.
 
 ## Checklist rows
 
