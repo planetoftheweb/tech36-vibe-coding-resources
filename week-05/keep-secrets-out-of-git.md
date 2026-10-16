@@ -66,6 +66,12 @@ gitleaks detect --redact
 
 `--redact` hides the actual values in the output, so you don't leak them again in your terminal or a screenshot. It lists the file, commit and type of each finding.
 
+No gitleaks? Check one file by name. This lists every commit that ever touched it, even if you deleted it later:
+
+```bash
+git log --all --oneline -- .env
+```
+
 Not every finding is a real problem. Some values are **public by design**: they're meant to ship in your website's code, where anyone can see them.
 
 | Usually public, OK to commit | Real secret, never commit |
@@ -109,9 +115,10 @@ Test it: put a fake key in a file (ask your AI for a made-up test value that loo
 ## 6. If a key leaks: rotate it first
 
 1. **Rotate the key right away.** Go to the service's dashboard, create a new key, update your `.env` and your hosting settings, then delete or disable the old key. This is the only step that actually stops someone from using it.
-2. **Check for damage.** Look at the service's usage and billing pages for activity you don't recognize.
-3. **Remove it from your code** and add the ignore rule from step 2.
-4. **Rewriting history is optional.** Tools like `git filter-repo` can scrub a key out of old commits, but it's tricky and changes everyone's copy of the repo. It also **doesn't un-leak a key.** Bots, forks and clones may already have it. Rotate first, always.
+2. **Then clean up git.** Remove the key from your code and add the ignore rule from step 2. To scrub it out of old commits, tools like `git filter-repo` can rewrite history, but it's tricky and changes everyone's copy of the repo, so ask for help. It also **doesn't un-leak a key.** Bots, forks and clones may already have it. That's why you rotate first.
+3. **Then check for damage.** Look at the service's usage and billing pages for activity you don't recognize.
+
+Using Google Cloud or Firebase? Also restrict each API key to your site and the APIs it needs, turn off APIs you don't use, and set a budget alert in Billing. The [Week 4 security test](../week-04/security-test-step.md#lessons-from-a-real-key-leak) explains why.
 
 ## Checklist
 

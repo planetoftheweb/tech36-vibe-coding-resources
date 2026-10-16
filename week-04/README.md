@@ -14,7 +14,7 @@ This week covers the developer ideas behind the tools you've been using (databas
 - **Authentication vs authorization.** Authentication is *who you are* (logging in). Authorization is *what you're allowed to see or do* (roles and permissions). People mix them up all the time.
 - **APIs and JSON.** An API is like a waiter: your app orders, the server's kitchen cooks, and the waiter brings back the result. That result usually comes packaged as JSON, a simple, structured list of labels and values.
 - **MCP (Model Context Protocol).** A standard way for AI agents to plug into outside tools and data, like a USB-C port for AI. Treat a new MCP server like any other software you install, because it can touch your files and accounts.
-- **API keys are passwords that decide who gets charged.** Keep them out of your code, your chats and GitHub. Use the tool's key settings and set spending limits.
+- **API keys are passwords that decide who gets charged.** Keep them out of your code, your chats and GitHub, including old commits. Restrict each key to your site and the APIs it needs, and set spending limits.
 - **Backend as a Service.** Platforms like Firebase and Supabase bundle the database, logins and storage, so you don't run your own server. Free tiers are generous. Set billing alerts everywhere.
 - **Measure what matters.** Track daily active users, how many come back (retention), and how many reach the core feature (activation). You can't improve what you don't measure.
 
@@ -28,14 +28,14 @@ This week covers the developer ideas behind the tools you've been using (databas
 
 ### Google AI Studio
 
-AI Studio lets you build apps that use Gemini features: text, vision, image generation, audio, live voice, maps and search. It manages your Gemini API key for you, so you never paste a real key into your code. Its app gallery is full of small demos you can remix.
+AI Studio lets you build apps that use Gemini features: text, vision, image generation, audio, live voice, maps and search. It manages your Gemini API key for you, so you never paste a real key into your code. If you download your app and host it somewhere else, make sure the key doesn't end up in the code the browser loads (the security test checks this). Its app gallery is full of small demos you can remix.
 
 ## Files in this folder
 
 | File | What it is |
 | --- | --- |
 | [prompts.md](prompts.md) | Planning and build prompts for Path A (game) and Path B (add principles) |
-| [security-test-step.md](security-test-step.md) | Step 6: security test your live site, plus what to submit |
+| [security-test-step.md](security-test-step.md) | Step 6: security test your live site, lessons from a real key leak, and what to submit |
 | [security-test-prompt.md](security-test-prompt.md) | The Security Test Prompt (harness version and short fallback) |
 | [security-check skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/security-check) | The same tool as an installable skill for Claude or ChatGPT |
 
@@ -151,7 +151,7 @@ Your site works. Now make sure a stranger can't read data that isn't theirs, cha
 I made the fixes. Run the security check on my site again and tell me what got better and what still needs work.
 ```
 
-> **Test only your own site.** Give it your published URL. Use made-up test accounts, never your real password, and never paste a secret key into the chat. If the test finds an exposed key, make a new key in that service and delete the old one.
+> **Test only your own site.** Give it your published URL. Use made-up test accounts, never your real password, and never paste a secret key into the chat. If the test finds an exposed key, first delete it (or make a new key and delete the old one) in that service, then clean it out of your code and git history, then check your billing and usage.
 
 > **Built a game with no login or database?** Run the test anyway. It still checks for exposed API keys, HTTPS, and leftover debug info. If it only finds 1 problem, fix that one and say so in your submission.
 
