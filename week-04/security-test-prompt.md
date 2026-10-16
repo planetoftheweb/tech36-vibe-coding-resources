@@ -6,7 +6,7 @@
 
 **Open your project in a harness:** connect your project to GitHub (in Lovable, use the GitHub button; in AI Studio, save to GitHub or download the ZIP). Then in Cursor choose File > Open Folder (or Clone Repo), or in a terminal run `git clone` with your repo link, `cd` into the folder, and type `claude`.
 
-No login or database? Run it anyway. It still checks for exposed keys, HTTPS, and leftover debug info.
+No login or database? Run it anyway. It still checks for exposed keys (including old commits and your site's browser code), HTTPS, and leftover debug info. For what each check means and how to check it yourself, see [Lessons from a real key leak](security-test-step.md#lessons-from-a-real-key-leak).
 
 ## Main version (coding harness)
 
@@ -24,19 +24,23 @@ Step 1. Read the repo yourself before asking me anything:
 - Planning files: PRD, agents.md, CLAUDE.md, and DESIGN.md, to learn what the app stores, who logs in, and what logged-in users can do.
 - The code, config, and package.json, to see which services and AI APIs it uses.
 - Database and storage rules: firebase.json, firestore.rules, storage.rules, Supabase migrations and policies, or whatever this project uses.
-- How keys are used: .env files, .env.example, and any key written straight into the code.
-- Git history: search past commits for keys, tokens, and .env files.
+- How keys are used: .env files, .env.example, any key written straight into the code, and build config like vite.config or next.config.
+- Server code: Firebase or Cloud Functions, API routes, and anything that calls an AI model or fetches a web address.
+- Git history: search every past commit, including files that were deleted later, for keys, tokens, .env files, and service account JSON files (files with "private_key" in them).
 - Deploy config (Vercel, Netlify, Firebase Hosting, Cloud Run, Lovable, or similar) and the live URL, from the README, config, or planning files.
 
 Step 2. Ask me only what you can't see, one question at a time, and wait for each answer. Aim for 0 to 3 questions. Tell me any guess in one sentence so I can confirm it. Good questions: "What's your live URL?" if you can't find it, and "Is the live site the same as this repo, or did you change things in your builder or service dashboards that aren't here?" If database rules aren't in the repo, ask me to paste them from the Firebase or Supabase dashboard.
 
 Step 3. Check these, and tell me which file or page you looked at for each one:
-- Exposed keys and secrets: secret keys, passwords, or tokens in the code, the files sent to the browser, committed .env files, or past commits. Some keys are meant to be public, like a Firebase web config or a Supabase anon (public) key. Those are only safe if the rules are locked down, so tell me which kind each key is. Secret keys, like a Supabase service role key, an OpenAI or Gemini API key, or a Stripe secret key, must never reach the browser or a public repo.
+- Exposed keys and secrets: secret keys, passwords, or tokens in the code, the files sent to the browser, committed .env files, or past commits. Check the whole git history, not just today's files, because deleting a file doesn't remove it from history (for example `git log --all -- .env`, or `gitleaks detect --redact` if it's installed). A service account JSON file (a file with "private_key" in it) is a master key to a cloud project and should never be in a repo, even a private one. Some keys are meant to be public, like a Firebase web config or a Supabase anon (public) key. Those are only safe if the rules are locked down, so tell me which kind each key is. Secret keys, like a Supabase service role key, an OpenAI or Gemini API key, or a Stripe secret key, must never reach the browser or a public repo.
+- Server keys in the browser: anything the browser downloads is public, even inside a minified file. Check whether a secret key gets copied into the built site, for example through env names that start with VITE_ or NEXT_PUBLIC_, or a vite.config that uses define to put process.env values into the code. Secret keys belong in server code only.
+- Paid features anyone can use: can a stranger call a function or API route that uses an AI model or another paid service without signing in? Is there a rate limit (a cap on how often one person can call it) or Firebase App Check? If not, anyone could run up my bill. Also look for open file proxies and server code that fetches any web address a user sends. That's called SSRF (server-side request forgery): a stranger could make my server download things for them, or reach private addresses only my server can see.
 - Database and storage rules: can someone who isn't logged in read, add, change, or delete data or files? Is Row Level Security turned on for every Supabase table? Flag any rule that lets anyone read or write everything.
 - One user seeing another user's data: do the rules and code check that the logged-in user owns the data before showing or changing it? Could someone change an ID in the web address or a request to reach another user's data?
 - Forms and input: does the server check what people type, not just the browser? Does the app show user text safely, or could it run code people type in (for example raw HTML)? Is there anything to stop bots from flooding a public form?
 - HTTPS: does the deploy config force https? Are any images or scripts loaded over plain http?
 - Leftover admin pages and debug info: admin or test pages anyone can open, error messages that show code or database details, and debug logging of private data.
+- Google Cloud settings (if this project uses Firebase, Gemini, or Google Cloud): you can't see these, so give me a short list to check myself in the Google Cloud console. Every API key should have an application restriction (my site, for a browser key) and an API restriction (only the APIs it needs). In Google AI Studio, look for keys labeled Unrestricted. Turn off APIs I don't use, since each one is something a leaked key can reach. Set a budget alert in Billing so I hear about a surprise bill in hours, not at the end of the month.
 - Optional live check: if you can reach the live URL, confirm read-only what you found, like https, a key showing up in the page source, or an admin page that opens. Say which findings you confirmed live.
 
 Rate how serious each problem is:
@@ -46,12 +50,12 @@ Rate how serious each problem is:
 
 Reply in this format:
 What works: 2 or 3 things you checked that are already safe, one sentence each.
-What to fix: up to 5 problems, numbered, worst first. For each one: a short title, the rating (High, Medium, or Low), the file it's in, what you found in one sentence, and what a stranger could do with it in one plain sentence.
+What to fix: up to 5 problems, numbered, worst first. For each one: a short title, the rating (High, Medium, or Low), the file it's in, what you found in one sentence, what a stranger could do with it in one plain sentence, and how I can check it myself.
 How to improve it: 3 suggestions, most important first. Each is one short sentence (under 20 words) that starts with an action word like Move, Lock, Turn on, Remove, Hide, or Check.
 Example: Lock firestore.rules so each user can only read and write their own entries.
-If a secret key was ever committed or public, tell me to make a new key in that service and delete the old one, because removing it from the code isn't enough.
+If a secret key was ever committed or public, tell me to do these in order: 1. First delete the key, or make a new one and delete the old one, in that service, because removing it from the code isn't enough. 2. Then clean it out of my code and git history. 3. Then check that service's billing and usage pages for anything I don't recognize.
 
-Then ask me which problems I want to fix (at least 2, or all of them) and wait. Before you start, warn me that fixing can use a lot of credits, so I can fix things myself instead. Fix only the problems I picked, change nothing else, add no new features, and don't redesign anything. Don't delete data, turn off login, or rewrite git history. Show me the diff and explain each change in one sentence before you commit, and wait for my OK. Then tell me how to check that the site still works for both a logged-in user and a visitor.
+Then ask me which problems I want to fix (at least 2, or all of them) and wait. Before you start, warn me that fixing can use a lot of credits, so I can fix things myself instead. Fix only the problems I picked, change nothing else, add no new features, and don't redesign anything. Don't delete data, turn off login, or rewrite git history yourself. If history needs cleaning, tell me how. Show me the diff and explain each change in one sentence before you commit, and wait for my OK. Then tell me how to check that the site still works for both a logged-in user and a visitor.
 ```
 
 ## Short fallback (any AI, no harness)
@@ -63,9 +67,9 @@ I'm sharing: my live link, plus my code or GitHub repo if I have it (or screensh
 
 Read what I share first. Then ask me only what you still need, one question at a time, like which services I use or to paste my Firebase or Supabase rules.
 
-Check: exposed keys and secrets, database and storage rules open to anyone, one user seeing or changing another user's data, forms and input handling, HTTPS, and leftover admin pages or debug info. Rate each problem High, Medium, or Low.
+Check: exposed keys and secrets (including old git commits, since deleting a file doesn't erase history, and service account files with "private_key"), secret keys in the browser code (anything the browser loads is public), AI or paid features anyone can use without signing in or a limit, server code that fetches any link a user sends, database and storage rules open to anyone, one user seeing or changing another user's data, forms and input handling, HTTPS, and leftover admin pages or debug info. If I use Google Cloud or Firebase, list what to check myself: API keys restricted to my site and the APIs they need, unused APIs turned off, and a budget alert. Rate each problem High, Medium, or Low.
 
-Reply with: What works (2 or 3 things), What to fix (up to 5, numbered, worst first, each with its rating and what a stranger could do), and How to improve it (3 short action sentences). If a key was exposed, tell me to make a new one and delete the old one.
+Reply with: What works (2 or 3 things), What to fix (up to 5, numbered, worst first, each with its rating, what a stranger could do, and how to check it), and How to improve it (3 short action sentences). If a key was exposed, tell me to delete or replace it first, then clean it out of my code and git history, then check billing and usage.
 
 Then ask which problems I want to fix (at least 2, or all of them). Optional: write one prompt I can paste into Lovable or my coding AI that fixes only those problems. Start it with a warning that it can use a lot of credits.
 ```
