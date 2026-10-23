@@ -71,7 +71,7 @@ The [Vibe Coding Skills](https://github.com/planetoftheweb/vibe-coding-skills) r
 
 ## Class slides
 
-The five class slide decks are view-only Google Slides, so these links always show the latest version. Want a copy? Open a deck and use **File > Download** to save a PDF.
+The five class slide decks are linked Google Slides, always the latest version. You can leave comments, and use **File > Download** for a PDF copy.
 
 | Week | Slides |
 | --- | --- |
