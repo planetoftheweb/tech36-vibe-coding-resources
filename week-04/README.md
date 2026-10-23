@@ -151,7 +151,17 @@ Your site works. Now make sure a stranger can't read data that isn't theirs, cha
 I made the fixes. Run the security check on my site again and tell me what got better and what still needs work.
 ```
 
-> **Test only your own site.** Give it your published URL. Use made-up test accounts, never your real password, and never paste a secret key into the chat. If the test finds an exposed key, first delete it (or make a new key and delete the old one) in that service, then clean it out of your code and git history, then check your billing and usage.
+6. Using AI Studio, Gemini, or Firebase? Your project is a real Google Cloud project with billing, and one leaked key can get the whole project suspended and take your entire site down. The AI can't see these settings, so check them yourself in the [Google Cloud console](https://console.cloud.google.com):
+   - [ ] Restrict each Gemini key to just the Generative Language API.
+   - [ ] Keep the key in server code only, never in the browser code.
+   - [ ] Set a budget alert in **Billing > Budgets & alerts**.
+   - [ ] Replaced a key? Add the new key as a new secret version, redeploy every function that uses it, then disable the old versions.
+   - [ ] Run `firebase functions:list` and compare it with the functions in main, including any you deployed from a branch or backup. Redeploy any that missed the update.
+   - [ ] Know where your data lives, and how your users could keep working if your site went offline.
+
+> **Test only your own site.** Give it your published URL. Use made-up test accounts, never your real password, and never paste a secret key into the chat. If the test finds an exposed key, first delete it (or make a new key and delete the old one) in that service, then update every function that uses it (new secret version, redeploy, disable the old versions), then clean it out of your code and git history, then check your billing and usage.
+
+> **If Google suspends your project:** appeal from the email as the project owner, don't delete the flagged resources, reply to the support case with what you fixed, and file only one appeal. A real appeal came back in about 16 hours.
 
 > **Built a game with no login or database?** Run the test anyway. It still checks for exposed API keys, HTTPS, and leftover debug info. If it only finds 1 problem, fix that one and say so in your submission.
 
@@ -196,6 +206,7 @@ Before you check the list below, confirm these three. This polish gate is part o
 | ☐ | Generate your build outline |
 | ☐ | Write your reflection naming the principles you applied |
 | ☐ | Run the security test in a coding harness (or the short fallback in any AI) |
+| ☐ | Using AI Studio, Gemini, or Firebase? Restrict your keys, set a budget alert, and check every deployed function matches main |
 | ☐ | Fix at least 2 problems, publish again, and run the retest |
 | ☐ | **Submit:** your VibeIt app link, build outline, reflection, security test results, and your fixes plus retest |
 
