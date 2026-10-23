@@ -69,17 +69,17 @@ The [Vibe Coding Skills](https://github.com/planetoftheweb/vibe-coding-skills) r
 | [privacy-check](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/privacy-check) | An educational privacy and data check (not legal advice) | Week 5 |
 | [ship-files](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/ship-files) | Adds the pages and repo files a real site needs | Week 5 |
 
-## Class slides (PDF)
+## Class slides
 
-PDF copies of the five class slide decks are in the [slides folder of the Vibe Coding Skills repo](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/slides):
+The five class slide decks are view-only Google Slides, so these links always show the latest version. Want a copy? Open a deck and use **File > Download** to save a PDF.
 
 | Week | Slides |
 | --- | --- |
-| 1 | [Part 1: Introduction to Vibe Coding](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-01-introduction-to-vibe-coding.pdf) |
-| 2 | [Part 2: From Dashboard to Product](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-02-from-dashboard-to-product.pdf) |
-| 3 | [Part 3: The App Development Spectrum](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-03-the-app-development-spectrum.pdf) |
-| 4 | [Part 4: The AI Powered App](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-04-the-ai-powered-app.pdf) |
-| 5 | [Part 5: Professional Agentic Harness](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-05-professional-agentic-harness.pdf) |
+| 1 | [Part 1: Introduction to Vibe Coding](https://docs.google.com/presentation/d/1PBOUpAenlJC7n6xIbZZ0t1KOVe1IDZlzue_6aet-5cI/edit?usp=sharing) |
+| 2 | [Part 2: From Dashboard to Product](https://docs.google.com/presentation/d/1kWzVwAwafEjY6F2zJqn5OreYuGV8H6J3txdEcHUZkyY/edit?usp=sharing) |
+| 3 | [Part 3: The App Development Spectrum](https://docs.google.com/presentation/d/1i1ksl_Oy0WihFjn3za1SFZPU-UyQp-bDZS2CiwLXTkg/edit?usp=sharing) |
+| 4 | [Part 4: The AI Powered App](https://docs.google.com/presentation/d/1WrynbWfxUbWIx6ItnwYNEp9T0Aeca6vDb_RX8eVDxgA/edit?usp=sharing) |
+| 5 | [Part 5: Professional Agentic Harness](https://docs.google.com/presentation/d/1K8u5h0m7L3vwybqjnqjHMpdsk_RQOWtH2wK0fG-71IY/edit?usp=sharing) |
 
 ## Prompts published as gists
 

@@ -220,7 +220,7 @@ No grades. The certificate is based on attending the sessions; assignments shoul
 ## Sources
 
 - Assignment 2 description from the course site (Canvas), converted to markdown.
-- Week overview and key ideas: rewritten for beginners from the class slides, [Part 2: From Dashboard to Product](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-02-from-dashboard-to-product.pdf) (PDF).
+- Week overview and key ideas: rewritten for beginners from the class slides, [Part 2: From Dashboard to Product](https://docs.google.com/presentation/d/1kWzVwAwafEjY6F2zJqn5OreYuGV8H6J3txdEcHUZkyY/edit?usp=sharing) (Google Slides).
 - Gist: [An AGENTS.md file for chatbots to use when building apps](https://gist.github.com/planetoftheweb/6d5d4dc280fb6c81dee22a12b7a9a9e0), copied into [agents-md-build-rules.md](agents-md-build-rules.md).
 - The [prd-architect skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/prd-architect), which replaces the PRD Architect tool linked from the assignment.
 

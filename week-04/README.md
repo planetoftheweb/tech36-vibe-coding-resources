@@ -216,7 +216,7 @@ No grades. Soft deadlines. **A4 is on the Certificate path:** Certificate = atte
 ## Sources
 
 - Assignment 4 description from the course site (Canvas), converted to markdown.
-- Week overview and key ideas: rewritten for beginners from the class slides, [Part 4: The AI Powered App](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-04-the-ai-powered-app.pdf) (PDF).
+- Week overview and key ideas: rewritten for beginners from the class slides, [Part 4: The AI Powered App](https://docs.google.com/presentation/d/1WrynbWfxUbWIx6ItnwYNEp9T0Aeca6vDb_RX8eVDxgA/edit?usp=sharing) (Google Slides).
 - Security test prompt and step text written for this course.
 
 [Back to the main index](../README.md)
