@@ -40,10 +40,11 @@ This week shows what building a real product looks like, using the story of an a
 
 | File | What it is |
 | --- | --- |
-| [prompts.md](prompts.md) | The polish prompt and the "what I did to finish it" outline prompt |
+| [prompts.md](prompts.md) | The polish prompt, the "what I did to finish it" outline prompt, and the investigate, build, check prompts |
 | [ship-and-privacy-steps.md](ship-and-privacy-steps.md) | Steps 5 and 6: ship pages and repo files, then a privacy check, plus what to submit |
 | [ship-files-prompt.md](ship-files-prompt.md) | The Ship Pages and Repo Files Prompt (harness version and short fallback) |
 | [privacy-test-prompt.md](privacy-test-prompt.md) | The Privacy and Data Test Prompt (harness version and short fallback) |
+| [investigate-build-check.md](investigate-build-check.md) | Lesson: investigate, build, check. Write a done list first, build against it, then check the live site with a second AI (with copy-paste prompts) |
 | [keep-secrets-out-of-git.md](keep-secrets-out-of-git.md) | Lesson: keeping API keys out of git with .gitignore, gitleaks and a pre-commit hook |
 | [privacy-check skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/privacy-check) | The same tool as an installable skill for Claude or ChatGPT |
 | [ship-files skill](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/ship-files) | The same tool as an installable skill for Claude or ChatGPT |

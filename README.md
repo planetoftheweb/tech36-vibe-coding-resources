@@ -51,6 +51,7 @@ Vibe coding means building software by describing what you want in plain languag
 - [Ship pages and privacy check steps](week-05/ship-and-privacy-steps.md)
 - [Ship Pages and Repo Files Prompt](week-05/ship-files-prompt.md)
 - [Privacy and Data Test Prompt](week-05/privacy-test-prompt.md)
+- [Investigate, build, check](week-05/investigate-build-check.md)
 - [Keeping secrets out of git](week-05/keep-secrets-out-of-git.md)
 
 ## Security, privacy and ship steps
