@@ -176,7 +176,7 @@ No grades. The certificate is based on attending the sessions; assignments shoul
 ## Sources
 
 - Assignment 3 description from the course site (Canvas), converted to markdown.
-- Week overview and key ideas: rewritten for beginners from the class slides, Part 3: The App Development Spectrum.
+- Week overview and key ideas: rewritten for beginners from the class slides, [Part 3: The App Development Spectrum](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-03-the-app-development-spectrum.pdf) (PDF).
 - Gist: [TECH 36 User Test Prompt](https://gist.github.com/planetoftheweb/c277a17dacf5e45687a328a794d43a1e), copied into [user-test-prompt.md](user-test-prompt.md).
 - Gist: [User Test](https://gist.github.com/planetoftheweb/93aaad59ea1f6bb5510917e046ef7618), copied into [user-test-prompt-original.md](user-test-prompt-original.md).
 

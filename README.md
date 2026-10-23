@@ -59,7 +59,27 @@ Weeks 4 and 5 add a security test, a ship pages and repo files step, and a priva
 
 ## Skills
 
-The [Vibe Coding Skills](https://github.com/planetoftheweb/vibe-coding-skills) repo packages the main prompts from this course as installable skills for Claude and ChatGPT, so you can reuse them without copying and pasting every time.
+The [Vibe Coding Skills](https://github.com/planetoftheweb/vibe-coding-skills) repo packages the main prompts from this course as installable skills for Claude and ChatGPT, so you can reuse them without copying and pasting every time. Each skill works as a Claude skill (Claude.ai or Claude Code), as ChatGPT Project instructions, or as a plain prompt for any AI.
+
+| Skill | What it does | Used in |
+| --- | --- | --- |
+| [prd-architect](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/prd-architect) | Interviews you one question at a time and co-writes a PRD (a short product plan) | Week 2 |
+| [user-test](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/user-test) | Tests your live site as a first-time visitor and tells you what to fix | Week 3 |
+| [security-check](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/security-check) | A beginner-friendly, non-invasive security check of your own site | Week 4 |
+| [privacy-check](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/privacy-check) | An educational privacy and data check (not legal advice) | Week 5 |
+| [ship-files](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/skills/ship-files) | Adds the pages and repo files a real site needs | Week 5 |
+
+## Class slides (PDF)
+
+PDF copies of the five class slide decks are in the [slides folder of the Vibe Coding Skills repo](https://github.com/planetoftheweb/vibe-coding-skills/tree/main/slides):
+
+| Week | Slides |
+| --- | --- |
+| 1 | [Part 1: Introduction to Vibe Coding](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-01-introduction-to-vibe-coding.pdf) |
+| 2 | [Part 2: From Dashboard to Product](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-02-from-dashboard-to-product.pdf) |
+| 3 | [Part 3: The App Development Spectrum](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-03-the-app-development-spectrum.pdf) |
+| 4 | [Part 4: The AI Powered App](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-04-the-ai-powered-app.pdf) |
+| 5 | [Part 5: Professional Agentic Harness](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-05-professional-agentic-harness.pdf) |
 
 ## Prompts published as gists
 

@@ -129,7 +129,7 @@ No grades. Soft deadlines. The **Certificate** is based on attending the session
 ## Sources
 
 - Assignment 1 description from the course site (Canvas), converted to markdown.
-- Week overview and key ideas: rewritten for beginners from the class slides, Part 1: Introduction to Vibe Coding.
+- Week overview and key ideas: rewritten for beginners from the class slides, [Part 1: Introduction to Vibe Coding](https://github.com/planetoftheweb/vibe-coding-skills/blob/main/slides/part-01-introduction-to-vibe-coding.pdf) (PDF).
 - Gist: [An AGENTS.md file for chatbots to use when building apps](https://gist.github.com/planetoftheweb/6d5d4dc280fb6c81dee22a12b7a9a9e0), referenced as an optional extra.
 
 [Back to the main index](../README.md)
