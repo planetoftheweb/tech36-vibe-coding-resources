@@ -1,4 +1,4 @@
-# Make Sure Your Site Is Agent Friendly
+# Make sure your site is agent friendly
 
 When you share your link with ChatGPT, Claude, Perplexity or a search engine, you probably expect it to "see" your site the way you do. Often it doesn't. A lot of vibe-coded apps look great in a browser but show a crawler almost nothing. This lesson explains why, how to check in two minutes, and gives you a prompt that lets your coding agent audit and fix your own app.
 

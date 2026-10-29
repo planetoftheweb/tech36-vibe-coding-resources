@@ -53,6 +53,7 @@ Vibe coding means building software by describing what you want in plain languag
 - [Privacy and Data Test Prompt](week-05/privacy-test-prompt.md)
 - [Investigate, build, check](week-05/investigate-build-check.md)
 - [Keeping secrets out of git](week-05/keep-secrets-out-of-git.md)
+- [Make sure your site is agent friendly](week-05/make-your-site-agent-friendly.md)
 
 ## Security, privacy and ship steps
 
